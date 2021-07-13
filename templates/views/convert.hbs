@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+      <div class="container-nav ">
+          {{>navbar}}
+           <div class="con-content">
+               <div class="note">
+                  <p class="note-txts">NOTE :</p>
+                   <ul>
+                       <li><p> In first box select the Number System and enter the number properly which you want to convert.</p></li>
+                       <li><p> In second box only select the Number System where you want to convert your first box number.</p></li>
+                       <li><p>Press <span>Convert</span> button and get the result.</p></li>
+                       <li><p>Got any problem or need any help please check <a href="/read">'Read More'</a>.</p></li>
+                   </ul>
+               </div>
+               <div class="con-area">
+                <div class="first-box">
+                    <p>Convert From:</p>
+                    <div class="con-input">
+                        <select name="" id="1stnum">
+                          <option value="">-Select-</option>
+                            <option value="decimal">Decimal</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hex">Hexadecimal</option>
+
+                        </select>
+                        <input type="text/number" name="" id="1st-input" placeholder="Input your number">
+                    </div>
+                </div>
+                <div class="arr-div"><i class="fas fa-angle-double-right arrow"></i></div>
+                <div class="second-box">
+                    <p>Convert To:</p>
+                    <div class="con-output">
+                        <select name="" id="2ndnum">
+                          <option value="">-Select-</option>
+                            <option value="decimal">Decimal</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hex">Hexadecimal</option>
+
+                        </select>
+                        <div class="output"><p id="sou-output">Get output here</p></div>
+                </div>
+               </div>
+             
+           </div>
+           <button type="button" class="submit-btn" id="submit-btn"><i class="fas fa-dice-three"></i>  Convert  <i class="fas fa-dice-three"></i></button>
+         </div>
+         {{>footer}}
+        </div>
+        
+           <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./app.js"></script>
+       {{>links}}
+      </body>
+    </html>
